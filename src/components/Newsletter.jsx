@@ -1,4 +1,5 @@
 import React from "react";
+import SendIcon from "@mui/icons-material/Send";
 
 const Newsletter = () => {
   return (
@@ -14,12 +15,14 @@ const Newsletter = () => {
       rounded-[5px] overflow-hidden"
       >
         <input
-          type="text"
+          type="email"
           placeholder="email"
           className="border-none pl-[29px]
         flex-[7] outline-none"
         />
-        <button>Send</button>
+        <button className="bg-[#4caf50] flex-1 h-[100%]">
+          <SendIcon className="text-white" />
+        </button>
       </div>
     </div>
   );
